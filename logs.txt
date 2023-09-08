@@ -1,0 +1,597 @@
+2023-05-25 16:37:12,036: [INFO]: Bot has been started
+2023-05-25 16:37:12,037: Start polling.
+2023-05-25 16:41:21,791: Polling is stopped.
+2023-05-25 16:41:21,791: [INFO]: Bot has been terminated
+2023-05-25 16:41:21,866: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001D744440090>
+2023-05-25 16:41:21,872: Stop polling...
+2023-05-25 16:41:43,002: [INFO]: Bot has been started
+2023-05-25 16:41:43,002: Start polling.
+2023-05-25 16:41:59,191: Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=UndefinedColumnError('столбец "send_or_not" в таблице "users" не существует')>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 68, in set_finish
+    await UserService.insert_user(data['user_id'], data['name'], data['surname'], data['nickname'],
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\DataBase\db.py", line 63, in insert_user
+    await con.execute(
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\asyncpg\connection.py", line 319, in execute
+    _, status, _ = await self._execute(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1658, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1683, in __execute
+    return await self._do_execute(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1710, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\asyncpg\connection.py", line 397, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\protocol\protocol.pyx", line 168, in prepare
+asyncpg.exceptions.UndefinedColumnError: столбец "send_or_not" в таблице "users" не существует
+2023-05-25 16:46:40,252: Polling is stopped.
+2023-05-25 16:46:40,253: [INFO]: Bot has been terminated
+2023-05-25 16:46:40,306: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001AFEEC7C690>
+2023-05-25 16:46:40,313: Stop polling...
+2023-05-25 16:47:55,759: [INFO]: Bot has been started
+2023-05-25 16:47:55,759: Start polling.
+2023-05-25 16:48:45,149: Task exception was never retrieved
+future: <Task finished name='Task-49' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=NameError("name 'is_subscribed' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 68, in set_finish
+    await UserService.insert_user(data['user_id'], data['name'], data['surname'], data['nickname'],
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\DataBase\db.py", line 67, in insert_user
+    surname, nickname, is_subscribed, date
+                       ^^^^^^^^^^^^^
+NameError: name 'is_subscribed' is not defined
+2023-05-25 16:51:57,854: Polling is stopped.
+2023-05-25 16:51:57,854: [INFO]: Bot has been terminated
+2023-05-25 16:51:57,909: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000024DA45DEED0>
+2023-05-25 16:51:57,919: Stop polling...
+2023-05-25 16:52:00,300: [INFO]: Bot has been started
+2023-05-25 16:52:00,300: Start polling.
+2023-05-25 16:52:08,216: Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("InlineKeyboardButton.__init__() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 74, in set_finish
+    bot.send_message('Работаешь сегодня?', reply_markup=work_or())
+                                                        ^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\Keyboards\inlineKb.py", line 26, in work_or
+    ikb=InlineKeyboardButton(inline_keyboard=[
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: InlineKeyboardButton.__init__() missing 1 required positional argument: 'text'
+2023-05-25 16:53:18,977: Polling is stopped.
+2023-05-25 16:53:18,977: [INFO]: Bot has been terminated
+2023-05-25 16:53:19,029: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002490440B110>
+2023-05-25 16:53:19,036: Stop polling...
+2023-05-25 16:53:30,408: [INFO]: Bot has been started
+2023-05-25 16:53:30,408: Start polling.
+2023-05-25 16:53:39,064: Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("InlineKeyboardButton.__init__() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 74, in set_finish
+    await bot.send_message('Работаешь сегодня?', reply_markup=work_or())
+                                                              ^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\Keyboards\inlineKb.py", line 26, in work_or
+    ikb=InlineKeyboardButton(inline_keyboard=[
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: InlineKeyboardButton.__init__() missing 1 required positional argument: 'text'
+2023-05-25 16:56:19,997: Polling is stopped.
+2023-05-25 16:56:19,997: [INFO]: Bot has been terminated
+2023-05-25 16:56:20,042: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000023FE0122090>
+2023-05-25 16:56:20,050: Stop polling...
+2023-05-25 16:56:32,255: [INFO]: Bot has been started
+2023-05-25 16:56:32,255: Start polling.
+2023-05-25 16:56:56,413: Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("type object 'UserService' has no attribute '_pool'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 73, in set_finish
+    is_subscribed = await UserService.take_subscribe(message.from_user.id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\DataBase\db.py", line 87, in take_subscribe
+    async with self._pool.acquire() as con:
+               ^^^^^^^^^^
+AttributeError: type object 'UserService' has no attribute '_pool'
+2023-05-25 17:01:30,169: Polling is stopped.
+2023-05-25 17:01:30,169: [INFO]: Bot has been terminated
+2023-05-25 17:01:30,216: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001BA4C6DF210>
+2023-05-25 17:01:30,223: Stop polling...
+2023-05-25 17:01:32,828: [INFO]: Bot has been started
+2023-05-25 17:01:32,828: Start polling.
+2023-05-25 17:01:34,921: Polling is stopped.
+2023-05-25 17:01:34,922: [INFO]: Bot has been terminated
+2023-05-25 17:01:34,973: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000022FC9B0B410>
+2023-05-25 17:01:34,984: Stop polling...
+2023-05-25 17:02:21,307: [INFO]: Bot has been started
+2023-05-25 17:02:21,307: Start polling.
+2023-05-25 17:02:29,811: Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("InlineKeyboardButton.__init__() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 76, in set_finish
+    await bot.send_message('Работаешь сегодня?', reply_markup=work_or())
+                                                              ^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\Keyboards\inlineKb.py", line 26, in work_or
+    ikb=InlineKeyboardButton(inline_keyboard=[
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: InlineKeyboardButton.__init__() missing 1 required positional argument: 'text'
+2023-05-25 17:04:18,737: Polling is stopped.
+2023-05-25 17:04:18,737: [INFO]: Bot has been terminated
+2023-05-25 17:04:18,784: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000298FB8ED410>
+2023-05-25 17:04:18,792: Stop polling...
+2023-05-25 17:05:32,962: [INFO]: Bot has been started
+2023-05-25 17:05:32,963: Start polling.
+2023-05-25 17:05:43,380: Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("Bot.send_message() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 76, in set_finish
+    await bot.send_message('Работаешь сегодня?', reply_markup=work_or())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Bot.send_message() missing 1 required positional argument: 'text'
+2023-05-25 17:08:32,692: Polling is stopped.
+2023-05-25 17:08:32,693: [INFO]: Bot has been terminated
+2023-05-25 17:08:32,721: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000216E4C72090>
+2023-05-25 17:08:32,731: Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x00000216E874B5B0>, 349744.359)]']
+connector: <aiohttp.connector.TCPConnector object at 0x00000216E77571D0>
+2023-05-25 17:08:32,731: Stop polling...
+2023-05-25 17:08:36,978: [INFO]: Bot has been started
+2023-05-25 17:08:36,979: Start polling.
+2023-05-25 17:09:28,357: Polling is stopped.
+2023-05-25 17:09:28,357: [INFO]: Bot has been terminated
+2023-05-25 17:09:28,413: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026D6DC3AFD0>
+2023-05-25 17:09:28,421: Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000026D6DB8B3F0>, 349801.531)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000026D6DB4EDD0>
+2023-05-25 17:09:28,421: Stop polling...
+2023-05-25 17:12:53,603: [INFO]: Bot has been started
+2023-05-25 17:12:53,604: Start polling.
+2023-05-25 17:12:54,034: Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'User' object has no attribute 'name'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 84, in yes_work
+    list_for_admin.append[name] = callback.from_user.name, 'Да'
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'name'
+2023-05-25 17:14:26,409: Polling is stopped.
+2023-05-25 17:14:26,409: [INFO]: Bot has been terminated
+2023-05-25 17:14:26,452: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002016F5AAF90>
+2023-05-25 17:14:26,462: Stop polling...
+2023-05-25 17:14:34,497: [INFO]: Bot has been started
+2023-05-25 17:14:34,497: Start polling.
+2023-05-25 17:14:51,612: Task exception was never retrieved
+future: <Task finished name='Task-59' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'User' object has no attribute 'name'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 84, in yes_work
+    list_for_admin.append[name] = callback.from_user.name, 'Да'
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'name'
+2023-05-25 17:14:52,638: Task exception was never retrieved
+future: <Task finished name='Task-63' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'User' object has no attribute 'name'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 91, in no_work
+    list_for_admin.append[name] = callback.from_user.name, 'Нет'
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'name'
+2023-05-25 17:15:02,542: Task exception was never retrieved
+future: <Task finished name='Task-69' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'User' object has no attribute 'name'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 84, in yes_work
+    list_for_admin.append[name] = callback.from_user.name, 'Да'
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'name'
+2023-05-25 17:15:03,692: Task exception was never retrieved
+future: <Task finished name='Task-73' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'User' object has no attribute 'name'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 91, in no_work
+    list_for_admin.append[name] = callback.from_user.name, 'Нет'
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'name'
+2023-05-26 20:22:09,880: [INFO]: Bot has been started
+2023-05-26 20:22:09,881: Start polling.
+2023-05-26 20:23:59,804: Polling is stopped.
+2023-05-26 20:23:59,804: [INFO]: Bot has been terminated
+2023-05-26 20:23:59,849: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C2FD3B7A90>
+2023-05-26 20:23:59,859: Stop polling...
+2023-05-26 20:24:02,648: [ERROR]: An error has occured - 'Bot' object has no attribute 'from_user'
+2023-05-26 20:24:02,648: [INFO]: Bot has been terminated
+2023-05-26 20:24:02,648: Start polling.
+2023-05-26 20:24:02,681: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000027A57AF7E10>
+2023-05-26 20:24:27,127: [ERROR]: An error has occured - 'Bot' object has no attribute 'from_user'
+2023-05-26 20:24:27,127: [INFO]: Bot has been terminated
+2023-05-26 20:24:27,127: Start polling.
+2023-05-26 20:24:27,164: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000023669D57A10>
+2023-05-26 20:30:33,312: Start polling.
+2023-05-26 20:30:33,313: [ERROR]: An error has occured - 'coroutine' object is not iterable
+2023-05-26 20:30:33,316: [INFO]: Bot has been terminated
+2023-05-26 20:30:33,356: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000272D27F7BD0>
+2023-05-26 20:32:36,399: Start polling.
+2023-05-26 20:32:36,418: [ERROR]: An error has occured - столбец "subscribe" не существует
+2023-05-26 20:32:36,418: [INFO]: Bot has been terminated
+2023-05-26 20:32:36,493: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001E34FFD7B10>
+2023-05-27 16:25:33,680: Start polling.
+2023-05-27 16:26:21,467: Task exception was never retrieved
+future: <Task finished name='Task-35' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'dict' object has no attribute 'append'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 76, in no_work
+    list_for_admin.append[name] = callback.from_user.username, 'Нет'
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+2023-05-27 16:26:39,367: [INFO]: Bot has been terminated
+2023-05-27 16:26:39,369: Polling is stopped.
+2023-05-27 16:26:39,414: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000024CBD328650>
+2023-05-27 16:26:39,422: Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000024CBD267850>, 520019.546)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000024CBD2E8450>
+2023-05-27 16:26:39,423: Stop polling...
+2023-05-27 16:27:37,451: Start polling.
+2023-05-27 16:30:09,695: [INFO]: Bot has been terminated
+2023-05-27 16:30:09,695: Polling is stopped.
+2023-05-27 16:30:09,725: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000020AE5C58150>
+2023-05-27 16:30:09,735: Stop polling...
+2023-05-27 16:39:12,187: Start polling.
+2023-05-27 16:41:06,876: [INFO]: Bot has been terminated
+2023-05-27 16:41:06,877: Polling is stopped.
+2023-05-27 16:41:06,984: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000017BC65D7910>
+2023-05-27 16:41:06,992: Stop polling...
+2023-05-27 16:43:33,741: Start polling.
+2023-05-27 16:44:58,547: [INFO]: Bot has been terminated
+2023-05-27 16:44:58,547: Polling is stopped.
+2023-05-27 16:44:58,584: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001A860C080D0>
+2023-05-27 16:44:58,594: Stop polling...
+2023-05-27 16:45:54,494: Start polling.
+2023-05-27 16:47:01,412: [INFO]: Bot has been terminated
+2023-05-27 16:47:01,413: Polling is stopped.
+2023-05-27 16:47:01,457: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000193AF260B90>
+2023-05-27 16:47:01,466: Stop polling...
+2023-05-27 16:48:13,101: Start polling.
+2023-05-27 16:50:01,612: [INFO]: Bot has been terminated
+2023-05-27 16:50:01,613: Polling is stopped.
+2023-05-27 16:50:01,645: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000025302807E50>
+2023-05-27 16:50:01,656: Stop polling...
+2023-05-29 16:23:35,293: Start polling.
+2023-05-29 16:29:11,106: Start polling.
+2023-05-29 16:29:51,472: [INFO]: Bot has been terminated
+2023-05-29 16:29:51,473: Polling is stopped.
+2023-05-29 16:29:51,521: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001E3A3CD8050>
+2023-05-29 16:29:51,528: Stop polling...
+2023-05-29 16:46:40,801: Start polling.
+2023-05-29 16:48:46,847: [INFO]: Bot has been terminated
+2023-05-29 16:48:46,856: Polling is stopped.
+2023-05-29 16:48:46,886: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C9F3878290>
+2023-05-29 16:48:46,895: Stop polling...
+2023-05-29 16:48:52,391: Start polling.
+2023-05-29 17:24:19,683: Polling is stopped.
+2023-05-29 17:24:19,746: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026AAE248450>
+2023-05-29 17:24:19,753: Stop polling...
+2023-05-31 15:33:00,609: Start polling.
+2023-05-31 15:33:52,410: [INFO]: Bot has been terminated
+2023-05-31 15:33:52,411: Polling is stopped.
+2023-05-31 15:33:52,431: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000023F5F567E50>
+2023-05-31 15:33:52,439: Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000023F5F4B7380>, 164957.281)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000023F5F552150>
+2023-05-31 15:33:52,439: Stop polling...
+2023-05-31 16:19:38,535: Start polling.
+2023-05-31 16:20:05,525: Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("unhashable type: 'list'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 67, in yes_work
+    list_for_admin[name] = callback.from_user.username, 'Да'
+    ~~~~~~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'list'
+2023-05-31 16:20:07,529: Task exception was never retrieved
+future: <Task finished name='Task-37' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("unhashable type: 'list'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 74, in no_work
+    list_for_admin[name] = callback.from_user.username, 'Нет'
+    ~~~~~~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'list'
+2023-05-31 16:20:12,596: [INFO]: Bot has been terminated
+2023-05-31 16:20:12,596: Polling is stopped.
+2023-05-31 16:20:12,616: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000166A3987D10>
+2023-05-31 16:20:12,623: Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x00000166A38D7E70>, 167737.187)]']
+connector: <aiohttp.connector.TCPConnector object at 0x00000166A2478850>
+2023-05-31 16:20:12,623: Stop polling...
+2023-05-31 16:28:48,735: Start polling.
+2023-05-31 16:29:35,587: [INFO]: Bot has been terminated
+2023-05-31 16:29:35,588: Polling is stopped.
+2023-05-31 16:29:35,607: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002B820100990>
+2023-05-31 16:29:35,614: Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000002B82003FC40>, 168287.515)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000002B81FFEA7D0>
+2023-05-31 16:29:35,614: Stop polling...
+2023-06-02 22:23:00,446: Start polling.
+2023-06-02 22:23:15,536: Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("unhashable type: 'list'")>
+Traceback (most recent call last):
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denzu\OneDrive\Рабочий стол\all python\aiogram_bot\Bot\bot\handlers\handler.py", line 61, in yes_work
+    list_for_admin[name] = callback.from_user.username, 'Да'
+    ~~~~~~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'list'
+2023-06-02 22:23:24,779: [INFO]: Bot has been terminated
+2023-06-02 22:23:24,780: Polling is stopped.
+2023-06-02 22:23:24,842: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000288DF4C0990>
+2023-06-02 22:23:24,853: Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x00000288DF3FF8C0>, 175518.203)]']
+connector: <aiohttp.connector.TCPConnector object at 0x00000288DF3AB890>
+2023-06-02 22:23:24,853: Stop polling...
+2023-06-03 16:58:53,408: Start polling.
+2023-06-03 16:59:02,245: [INFO]: Bot has been terminated
+2023-06-03 16:59:02,246: Polling is stopped.
+2023-06-03 16:59:02,278: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000018BF1DA7D90>
+2023-06-03 16:59:02,286: Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000018BF1CEFD90>, 242458.343)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000018BF0CA0850>
+2023-06-03 16:59:02,286: Stop polling...
